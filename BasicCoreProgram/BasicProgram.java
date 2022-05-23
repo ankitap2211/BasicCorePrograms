@@ -88,5 +88,19 @@ public class BasicProgram {
             System.out.println(number);
     }
 
+    void harmonic() {
+        int count;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter range:");
+        int num = sc.nextInt();
+        for (count = 1; count < num; count++) {
+            if (count == 0)
+                System.out.print("1/" + count);
+            else
+                System.out.print("1/" + count + "+");
+        }
+    }
+}
+
 
 }
