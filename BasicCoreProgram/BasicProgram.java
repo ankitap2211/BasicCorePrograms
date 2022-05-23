@@ -37,4 +37,14 @@ public class BasicProgram {
         System.out.println("After swapping numbers are :" + x + " " + y);
     }
 
+    void evenOddNumber() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number to check odd or even :");
+        int x = sc.nextInt();
+        if (x % 2 == 0)
+            System.out.println(x + " is Even number");
+        else
+            System.out.println(x + " is Odd number");
+    }
+
 }
