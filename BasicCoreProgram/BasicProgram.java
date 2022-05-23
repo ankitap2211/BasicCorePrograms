@@ -47,4 +47,16 @@ public class BasicProgram {
             System.out.println(x + " is Odd number");
     }
 
+    void vowles() {
+        char c;
+        Scanner Scanner;
+        Scanner = new Scanner(System.in);
+        System.out.println("Enter any letter to check vowels or consonant:");
+        c = Scanner.next().charAt(0);
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+            System.out.println(c + " Alphabet is vowel");
+        else
+            System.out.println(c + " Alphabet is consonant");
+    }
+
 }
