@@ -25,4 +25,16 @@ public class BasicProgram {
         System.out.println("Reminder is :" + reminder);
     }
 
+    void swapNumber() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter two number to swap :");
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        System.out.println("Before swapping numbers are :" + x + " " + y);
+        int temp = x;
+        x = y;
+        y = temp;
+        System.out.println("After swapping numbers are :" + x + " " + y);
+    }
+
 }
