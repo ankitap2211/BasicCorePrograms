@@ -59,4 +59,19 @@ public class BasicProgram {
             System.out.println(c + " Alphabet is consonant");
     }
 
+    void largestOfThree() {
+        System.out.println("Enter three number to find largest one :");
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int z = sc.nextInt();
+
+        if (x > y && x > z)
+            System.out.println(x + " is large");
+        else if (y > x && y > z)
+            System.out.println(y + " is large");
+        else
+            System.out.println(z + " is large");
+    }
+
 }
