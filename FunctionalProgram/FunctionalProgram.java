@@ -33,4 +33,21 @@ public class FunctionalProgram {
         System.out.println("distance from (" + x + "," + y + ") to (0,0) = " + distance);
     }
 
+    void sumOfThreeIntegers() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of element:");
+        int numberOfElement = sc.nextInt();
+        int numberOfElements = 0;
+        int arraySize[] = new int[numberOfElements];
+        int i, j, k;
+        for (i = 0; i < numberOfElement; i++) {
+            arraySize[i] = sc.nextInt();
+        }
+        for (i = 0; i < numberOfElement - 2; i++)
+            for (j = i + 1; j < numberOfElement - 1; j++)
+                for (k = j + 1; k < numberOfElement; k++) {
+                    if (arraySize[i] + arraySize[j] + arraySize[k] == 0)
+                        System.out.println("Elements are " + arraySize[i] + "," + arraySize[j] + "," + arraySize[k]);
+                }
+        }
 }
