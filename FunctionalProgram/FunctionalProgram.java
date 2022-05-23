@@ -23,4 +23,14 @@ public class FunctionalProgram {
         }
     }
 
+    void distance() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter point for x axis : ");
+        double x = sc.nextDouble();
+        System.out.print("Enter point for y axis : ");
+        double y = sc.nextDouble();
+        double distance = Math.sqrt(x * x + y * y);
+        System.out.println("distance from (" + x + "," + y + ") to (0,0) = " + distance);
+    }
+
 }
