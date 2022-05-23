@@ -74,4 +74,19 @@ public class BasicProgram {
             System.out.println(z + " is large");
     }
 
+    void primeFactor() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number :");
+        int number = sc.nextInt();
+        for (int i = 2; number < i; number++) {
+            while (i % number == 0) {
+                System.out.println(i + " is a prime factor of " + number);
+                number = number / i;
+            }
+        }
+        if (number > 2)
+            System.out.println(number);
+    }
+
+
 }
