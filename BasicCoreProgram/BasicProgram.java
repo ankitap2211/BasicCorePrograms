@@ -100,6 +100,22 @@ public class BasicProgram {
                 System.out.print("1/" + count + "+");
         }
     }
+
+    void powerOfTwo() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number to find the power of :");
+        int number = sc.nextInt();
+        int i = 0, total;
+        if (number >= 0)
+            while (i <= number && i < 31) {
+                total = (int) Math.pow(2, i);
+                System.out.println("2^" + i + ":" + total);
+                i++;
+            }
+        if (i >= 31)
+            System.out.println("You entered wrong number");
+
+    }
 }
 
 
