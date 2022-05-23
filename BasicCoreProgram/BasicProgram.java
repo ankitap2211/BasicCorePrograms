@@ -12,4 +12,17 @@ public class BasicProgram {
         else
             System.out.println(year + " is not leap year");
     }
+
+    void quotientReminder() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter dividend :");
+        int dividend = sc.nextInt();
+        System.out.println("Enter divisor :");
+        int divisor = sc.nextInt();
+        int quotient = dividend / divisor;
+        int reminder = dividend % divisor;
+        System.out.println("Quotient is: " + quotient);
+        System.out.println("Reminder is :" + reminder);
+    }
+
 }
